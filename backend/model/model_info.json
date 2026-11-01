@@ -1,0 +1,32 @@
+{
+  "model": "LogisticRegression",
+  "features": [
+    "rating_s",
+    "year_s",
+    "runtime_s",
+    "like_share",
+    "genre_match"
+  ],
+  "threshold": 0.55,
+  "trained_on_ratings": 19106,
+  "trained_on_users": 355,
+  "min_profile_ratings": 15,
+  "feature_means": {
+    "rating_s": 0.6675,
+    "year_s": 0.6392,
+    "runtime_s": 0.3019,
+    "like_share": 0.5944,
+    "genre_match": 0.5948
+  },
+  "test_results_threshold_055": {
+    "accuracy": 0.71,
+    "balanced accuracy": 0.688,
+    "precision": 0.745,
+    "likes found (recall)": 0.792,
+    "dislikes found": 0.585,
+    "F1": 0.768,
+    "ROC AUC": 0.766
+  },
+  "baseline_accuracy": 0.605,
+  "sklearn_version": "1.9.0"
+}
